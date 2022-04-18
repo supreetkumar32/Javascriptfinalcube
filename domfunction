@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1>fcg</h1>
+        welcome here
+    </div>
+    <div class="main1">
+        
+        welcome main1
+    </div>
+    <!-- <div class="main1">
+        <h1>fcg</h1>
+        welcome main2
+    </div> -->
+</body>
+<script type="text/javascript">
+   //var x=document.getElementById("main").innerHTML;
+  // console.log(x);//main ke andar ke elemeent ko print karega
+   //document.getElementById("main").innerHTML="supreet";//main ke old element ko replace kar dega naye data se
+
+  // document.getElementByClassName("main1").innerHTML;
+   document.getElementByClassName("main1")[0].innerHTML="gvagveevgvge";
+    </script>
+</html>
