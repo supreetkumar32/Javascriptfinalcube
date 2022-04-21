@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="pop()">pop</button>
+    <button onclick="push()">push</button>
+    <button onclick="reverse()">reverse</button>
+</body>
+<script type="text/javascript">
+   var fruits=["abc","def","ghi","jkl","mno"];
+   var demo=fruits;//demo mey change karne s efruits mey change nahi hoga
+   document.getElementById("res").innerHTML=demo;
+   function pop(){
+       demo.pop();
+       document.getElementById('res').innerHTML=demo;
+   }
+   function push(){
+       var x=prompt("enter the name of fruit"," ");
+       demo.push(x);
+       document.getElementById('res').innerHTML=demo;
+   }
+   function reverse(){
+       demo.reverse();
+       document.getElementById('res').innerHTML=demo;
+   }
+</script>
+</html>
