@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="this.style.background='red'">Click to hide</button> -->
+    <button onclick="remove(this)">Click to hide</button>
+</body>
+<script>
+    // var person={
+    //     firstname:"Supreet",
+    //     secondname:"Kumar",
+    //     fullname:function(){
+    //         return this.firstname + this.secondname;
+    //     }
+    // };
+    // document.write("<h1>" +person.fullname());
+
+    function remove(elem){
+        elem.style.display="none";
+    }
+</script>
+</html>
