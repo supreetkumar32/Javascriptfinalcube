@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #zz{
+            text-align: center;
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fuga repudiandae omnis corporis! Aspernatur at consequatur neque ab enim error esse aliquam, facilis, sed accusantium nostrum illum voluptatem modi, atque mollitia molestias cupiditate. Aliquid doloremque nisi fugit rerum. Sint, cumque? Molestiae unde eum soluta a.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium autem voluptas, repudiandae, reiciendis magni labore nisi culpa velit rem dolores, quae sit aliquid provident perspiciatis! Eos, harum corporis qui consequatur perspiciatis minus sint distinctio, alias magni suscipit excepturi facilis omnis non numquam aut? Iste maxime odio ut accusamus ratione corporis, amet error commodi nam quae reiciendis quos suscipit hic sapiente facilis eligendi, accusantium iusto.
+    <br>
+    <br>
+</div>
+    <button id="zz" onclick="printpage()">Print it</button>
+    <div id="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fuga repudiandae omnis corporis! Aspernatur at consequatur neque ab enim error esse aliquam, facilis, sed accusantium nostrum illum voluptatem modi, atque mollitia molestias cupiditate. Aliquid doloremque nisi fugit rerum. Sint, cumque? Molestiae unde eum soluta a.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium autem voluptas, repudiandae, reiciendis magni labore nisi culpa velit rem dolores, quae sit aliquid provident perspiciatis! Eos, harum corporis qui consequatur perspiciatis minus sint distinctio, alias magni suscipit excepturi facilis omnis non numquam aut? Iste maxime odio ut accusamus ratione corporis, amet error commodi nam quae reiciendis quos suscipit hic sapiente facilis eligendi, accusantium iusto.
+        <br>
+        <br>
+    </div>
+</body>
+<script>
+    function printpage(){
+        // window.print();
+        var body=document.getElementById("body").innerHTML;
+        // alert(body);
+        var data=document.getElementById("data").innerHTML;
+        document.getElementById("body").innerHTML=data;
+        window.print();
+        document.getElementById("body").innerHTML=body;
+    }
+</script>
+</html>
